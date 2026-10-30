@@ -21,8 +21,6 @@ The 2017 CSV provides weighted occurrence counts; later years provide individual
 
 The build writes reconciliation totals and aggregate CSVs to ignored build/. Generated self-contained HTML is committed in docs/. GitHub Actions deploys only docs/; it does not rerun the data build or need access to original records.
 
-## Grove
-
 ## Browser verification
 
 With Chrome and Playwright installed, run `PLAYWRIGHT_MODULE=/path/to/playwright node tests/embeds.mjs`. Omit PLAYWRIGHT_MODULE when Playwright is available to Node's normal module resolver. This workspace-level test expects the restored ICE checkout alongside this repository as `../ice-arrests-austin-area`. It checks chart controls, keyboard navigation, search normalization, themes, motion preferences, responsive layouts, cross-origin iframe growth and shrinkage, all ICE geography tabs at seven widths, and the JavaScript-free tables. Screenshots and the verification report go into ignored test-results/.
