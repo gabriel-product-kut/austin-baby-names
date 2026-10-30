@@ -108,8 +108,26 @@ try {
   }
   await p.goto(`${origin}/ice/`);
   assert(await p.locator('svg').count()>0);
+  assert.equal(await p.locator('.ice-chart').count(),1);
+  for(const width of [320,390,560,768,900,1024,1280]){
+    await p.setViewportSize({width,height:760});
+    for(const scope of ['Austin Area','Texas','National']){
+      await p.locator(`[data-scope="${scope}"]`).click();
+      assert.match(await p.locator('#chart-title').textContent(),new RegExp(scope));
+      const bounds=await p.locator('.source').boundingBox();
+      assert(bounds.y+bounds.height<=760,`ICE source clipped at ${width}px for ${scope}`);
+      const svgBounds=await p.locator('svg').boundingBox();
+      const noteBounds=await p.locator('.note').boundingBox();
+      assert(svgBounds.y+svgBounds.height<=noteBounds.y,`ICE plot overlaps its source note at ${width}px`);
+    }
+  }
+  await p.locator('[data-scope="Austin Area"]').click();
+  await p.locator('.hover-target').first().focus();
+  assert.equal(await p.locator('.chart-tooltip').getAttribute('data-visible'),'true');
+  await p.locator('.hover-target').first().blur();
   await p.screenshot({path:path.join(outputs,'ice-desktop.png'),fullPage:true});
   await p.setViewportSize({width:390,height:844});
+  await p.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   await p.screenshot({path:path.join(outputs,'ice-mobile.png'),fullPage:true});
   assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   const nojs=await browser.newContext({javaScriptEnabled:false});

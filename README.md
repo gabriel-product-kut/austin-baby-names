@@ -23,4 +23,10 @@ The build writes reconciliation totals and aggregate CSVs to ignored build/. Gen
 
 ## Grove
 
+## Browser verification
+
+With Chrome and Playwright installed, run `PLAYWRIGHT_MODULE=/path/to/playwright node tests/embeds.mjs`. Omit PLAYWRIGHT_MODULE when Playwright is available to Node's normal module resolver. This workspace-level test expects the restored ICE checkout alongside this repository as `../ice-arrests-austin-area`. It checks chart controls, keyboard navigation, search normalization, themes, motion preferences, responsive layouts, cross-origin iframe growth and shrinkage, all ICE geography tabs at seven widths, and the JavaScript-free tables. Screenshots and the verification report go into ignored test-results/.
+
+## Grove embed code
+
 Paste the snippets in grove/ into Grove's HTML embed fields. Both iframe URLs and the parent's message-origin checks use gabriel-product-kut.github.io. The child messages retain embed='austin-baby-names', their filename slug, and measured body height. The top-100 table provides a JavaScript-free fallback.
