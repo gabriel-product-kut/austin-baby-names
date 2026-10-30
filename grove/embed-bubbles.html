@@ -1,0 +1,29 @@
+<iframe
+  id="austin-baby-names-bubbles"
+  src="https://gabriel-product-kut.github.io/austin-baby-names/embed-bubbles.html"
+  title="Austin baby-name trends"
+  width="100%"
+  height="986"
+  style="display:block;width:100%;border:0;"
+  loading="lazy"
+  scrolling="no">
+</iframe>
+<script>
+(function () {
+  var frame = document.getElementById("austin-baby-names-bubbles");
+
+  window.addEventListener("message", function (event) {
+    var data = event.data;
+
+    if (
+      event.origin === "https://gabriel-product-kut.github.io" &&
+      event.source === frame.contentWindow &&
+      data &&
+      data.embed === "austin-baby-names" &&
+      data.slug === "embed-bubbles"
+    ) {
+      frame.style.height = Math.max(200, Math.min(10000, Number(data.height))) + "px";
+    }
+  });
+})();
+</script>

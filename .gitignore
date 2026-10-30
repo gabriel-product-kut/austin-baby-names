@@ -1,0 +1,9 @@
+build/
+data/
+.RData
+.Rhistory
+.Rproj.user/
+.venv/
+.DS_Store
+node_modules/
+test-results/

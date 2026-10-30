@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austin's most common baby names</title>
+<style>
+  :root{
+    color-scheme: light;
+    --surface-1:#fcfcfb; --surface-2:#f4f3f0; --surface-3:#eceae6;
+    --line:#dedcd6;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
+    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a;
+    --div-lo:#2a78d6; --div-mid:#e6e4df; --div-hi:#e34948;
+    --seq-1:#cde2fb; --seq-2:#9ec5f4; --seq-3:#6da7ec;
+    --seq-4:#3987e5; --seq-5:#2a78d6; --seq-6:#256abf; --seq-7:#184f95;
+    --focus:#0b0b0b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])){
+      color-scheme: dark;
+      --surface-1:#1a1a19; --surface-2:#232322; --surface-3:#2d2d2b;
+      --line:#3a3a37;
+      --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+      --s1:#3987e5; --s2:#d95926; --s3:#199e70;
+      --div-lo:#3987e5; --div-mid:#383835; --div-hi:#e66767;
+      --seq-1:#184f95; --seq-2:#1c5cab; --seq-3:#256abf;
+      --seq-4:#2a78d6; --seq-5:#3987e5; --seq-6:#5598e7; --seq-7:#86b6ef;
+      --focus:#ffffff;
+    }
+  }
+  html,body{margin:0;padding:0;background:transparent}
+  .gv *{box-sizing:border-box}
+  .gv{
+    color:var(--text-primary); background:transparent;
+    font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+    padding:14px 14px 18px; max-width:1360px; margin:0 auto;
+  }
+  @media (max-width:560px){ .gv{padding:10px 10px 14px} }
+  .gv h1{font-size:21px;letter-spacing:-.02em;margin:0 0 3px;line-height:1.2}
+  .gv .standfirst{margin:0;color:var(--text-secondary);font-size:13px}
+  .gv .standfirst b{color:var(--text-primary);font-variant-numeric:tabular-nums}
+  .gv .credit{margin:14px 0 0;color:var(--text-muted);font-size:11.5px;line-height:1.6}
+  .gv .card{background:var(--surface-2);border:1px solid var(--line);border-radius:12px}
+  .gv .sr{position:absolute;width:1px;height:1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* segmented control -- shared by every embed's toggles */
+  .gv .ctl{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .gv .ctl > span,.gv .ctl > label{font-size:11px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--text-muted)}
+  .gv .seg{display:flex;flex-wrap:wrap;gap:3px;background:var(--surface-3);
+    padding:3px;border-radius:9px}
+  .gv .seg button{
+    border:0;background:transparent;color:var(--text-secondary);font:inherit;font-size:13px;
+    padding:7px 12px;border-radius:6px;cursor:pointer;font-variant-numeric:tabular-nums;
+    min-height:38px;                      /* comfortable touch target */
+  }
+  .gv .seg button:hover{color:var(--text-primary)}
+  .gv .seg button[aria-pressed="true"]{background:var(--surface-1);color:var(--text-primary);
+    font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.10)}
+  .gv .seg button:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.gv table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.gv th,.gv td{padding:8px;border-bottom:1px solid var(--line);text-align:left}.gv td:last-child{text-align:right}.gv h2{margin-top:24px}
+</style>
+</head>
+<body>
+<div class="gv" id="root">
+<h1>Austin’s most common baby names</h1><p class="standfirst">2017–2024 · City of Austin records</p><h2>Everyone</h2><table><thead><tr><th>Rank</th><th>Name</th><th>Babies</th></tr></thead><tbody><tr><td>1</td><td>Liam</td><td>848</td></tr><tr><td>2</td><td>Noah</td><td>726</td></tr><tr><td>3</td><td>Olivia</td><td>720</td></tr><tr><td>4</td><td>Emma</td><td>693</td></tr><tr><td>5</td><td>Oliver</td><td>651</td></tr><tr><td>6</td><td>Mateo</td><td>644</td></tr><tr><td>7</td><td>Mia</td><td>634</td></tr><tr><td>8</td><td>Isabella</td><td>631</td></tr><tr><td>9</td><td>James</td><td>605</td></tr><tr><td>10</td><td>William</td><td>593</td></tr><tr><td>11</td><td>Henry</td><td>576</td></tr><tr><td>12</td><td>Camila</td><td>575</td></tr><tr><td>13</td><td>Sebastian</td><td>566</td></tr><tr><td>14</td><td>Benjamin</td><td>557</td></tr><tr><td>15</td><td>Sofia</td><td>527</td></tr><tr><td>16</td><td>Dylan</td><td>524</td></tr><tr><td>17</td><td>Sophia</td><td>522</td></tr><tr><td>18</td><td>Evelyn</td><td>521</td></tr><tr><td>19</td><td>Charlotte</td><td>512</td></tr><tr><td>20</td><td>Jack</td><td>497</td></tr><tr><td>21</td><td>Daniel</td><td>492</td></tr><tr><td>22</td><td>Elijah</td><td>488</td></tr><tr><td>23</td><td>Theodore</td><td>483</td></tr><tr><td>24</td><td>Alexander</td><td>480</td></tr><tr><td>25</td><td>Lucas</td><td>466</td></tr><tr><td>26</td><td>Ethan</td><td>465</td></tr><tr><td>27</td><td>John</td><td>459</td></tr><tr><td>28</td><td>Amelia</td><td>456</td></tr><tr><td>29</td><td>Santiago</td><td>446</td></tr><tr><td>30</td><td>Ava</td><td>441</td></tr><tr><td>31</td><td>Julian</td><td>434</td></tr><tr><td>32</td><td>David</td><td>415</td></tr><tr><td>33</td><td>Logan</td><td>412</td></tr><tr><td>33</td><td>Samuel</td><td>412</td></tr><tr><td>35</td><td>Luke</td><td>409</td></tr><tr><td>36</td><td>Emily</td><td>400</td></tr><tr><td>37</td><td>Jose</td><td>394</td></tr><tr><td>38</td><td>Levi</td><td>392</td></tr><tr><td>39</td><td>Zoe</td><td>387</td></tr><tr><td>40</td><td>Elizabeth</td><td>386</td></tr><tr><td>41</td><td>Avery</td><td>382</td></tr><tr><td>42</td><td>Jacob</td><td>379</td></tr><tr><td>43</td><td>Luna</td><td>377</td></tr><tr><td>44</td><td>Jackson</td><td>369</td></tr><tr><td>45</td><td>Michael</td><td>366</td></tr><tr><td>46</td><td>Penelope</td><td>364</td></tr><tr><td>47</td><td>Miles</td><td>362</td></tr><tr><td>48</td><td>Ezra</td><td>357</td></tr><tr><td>49</td><td>Owen</td><td>355</td></tr><tr><td>50</td><td>Leo</td><td>353</td></tr><tr><td>51</td><td>Mila</td><td>352</td></tr><tr><td>52</td><td>Eleanor</td><td>347</td></tr><tr><td>53</td><td>Anthony</td><td>340</td></tr><tr><td>54</td><td>Angel</td><td>339</td></tr><tr><td>55</td><td>Aiden</td><td>337</td></tr><tr><td>56</td><td>Hudson</td><td>330</td></tr><tr><td>56</td><td>Matthew</td><td>330</td></tr><tr><td>58</td><td>Joseph</td><td>329</td></tr><tr><td>59</td><td>Abigail</td><td>328</td></tr><tr><td>60</td><td>Wyatt</td><td>327</td></tr><tr><td>61</td><td>Isaac</td><td>326</td></tr><tr><td>62</td><td>Harper</td><td>325</td></tr><tr><td>63</td><td>Elias</td><td>323</td></tr><tr><td>64</td><td>Asher</td><td>322</td></tr><tr><td>65</td><td>Charles</td><td>320</td></tr><tr><td>65</td><td>Luca</td><td>320</td></tr><tr><td>67</td><td>Gabriel</td><td>312</td></tr><tr><td>68</td><td>Jayden</td><td>309</td></tr><tr><td>69</td><td>Joshua</td><td>308</td></tr><tr><td>70</td><td>Ian</td><td>306</td></tr><tr><td>71</td><td>Christopher</td><td>305</td></tr><tr><td>72</td><td>Ella</td><td>304</td></tr><tr><td>72</td><td>Scarlett</td><td>304</td></tr><tr><td>74</td><td>Elena</td><td>298</td></tr><tr><td>74</td><td>Parker</td><td>298</td></tr><tr><td>76</td><td>Caleb</td><td>293</td></tr><tr><td>77</td><td>Victoria</td><td>291</td></tr><tr><td>78</td><td>Violet</td><td>289</td></tr><tr><td>79</td><td>Thomas</td><td>285</td></tr><tr><td>80</td><td>Diego</td><td>284</td></tr><tr><td>81</td><td>Lily</td><td>282</td></tr><tr><td>82</td><td>Gael</td><td>281</td></tr><tr><td>83</td><td>Grayson</td><td>279</td></tr><tr><td>84</td><td>Josiah</td><td>278</td></tr><tr><td>85</td><td>Leonardo</td><td>277</td></tr><tr><td>86</td><td>Aria</td><td>276</td></tr><tr><td>87</td><td>Emilia</td><td>275</td></tr><tr><td>88</td><td>Chloe</td><td>273</td></tr><tr><td>88</td><td>Christian</td><td>273</td></tr><tr><td>90</td><td>Adrian</td><td>271</td></tr><tr><td>91</td><td>Nathan</td><td>270</td></tr><tr><td>92</td><td>Aaron</td><td>267</td></tr><tr><td>93</td><td>Ryan</td><td>263</td></tr><tr><td>94</td><td>Maya</td><td>258</td></tr><tr><td>94</td><td>Nolan</td><td>258</td></tr><tr><td>96</td><td>Axel</td><td>257</td></tr><tr><td>97</td><td>Andrew</td><td>255</td></tr><tr><td>98</td><td>Lucy</td><td>252</td></tr><tr><td>99</td><td>Ezekiel</td><td>250</td></tr><tr><td>100</td><td>Riley</td><td>249</td></tr></tbody></table><h2>Girls</h2><table><thead><tr><th>Rank</th><th>Name</th><th>Babies</th></tr></thead><tbody><tr><td>1</td><td>Olivia</td><td>720</td></tr><tr><td>2</td><td>Emma</td><td>692</td></tr><tr><td>3</td><td>Mia</td><td>634</td></tr><tr><td>4</td><td>Isabella</td><td>630</td></tr><tr><td>5</td><td>Camila</td><td>575</td></tr><tr><td>6</td><td>Sofia</td><td>527</td></tr><tr><td>7</td><td>Sophia</td><td>522</td></tr><tr><td>8</td><td>Evelyn</td><td>521</td></tr><tr><td>9</td><td>Charlotte</td><td>512</td></tr><tr><td>10</td><td>Amelia</td><td>456</td></tr><tr><td>11</td><td>Ava</td><td>441</td></tr><tr><td>12</td><td>Emily</td><td>400</td></tr><tr><td>13</td><td>Zoe</td><td>387</td></tr><tr><td>14</td><td>Elizabeth</td><td>386</td></tr><tr><td>15</td><td>Luna</td><td>377</td></tr><tr><td>16</td><td>Penelope</td><td>364</td></tr><tr><td>17</td><td>Mila</td><td>352</td></tr><tr><td>18</td><td>Eleanor</td><td>347</td></tr><tr><td>19</td><td>Abigail</td><td>328</td></tr><tr><td>20</td><td>Avery</td><td>325</td></tr><tr><td>21</td><td>Harper</td><td>315</td></tr><tr><td>22</td><td>Ella</td><td>304</td></tr><tr><td>22</td><td>Scarlett</td><td>304</td></tr><tr><td>24</td><td>Elena</td><td>298</td></tr><tr><td>25</td><td>Victoria</td><td>289</td></tr><tr><td>25</td><td>Violet</td><td>289</td></tr><tr><td>27</td><td>Lily</td><td>282</td></tr><tr><td>28</td><td>Emilia</td><td>275</td></tr><tr><td>29</td><td>Aria</td><td>274</td></tr><tr><td>30</td><td>Chloe</td><td>273</td></tr><tr><td>31</td><td>Maya</td><td>258</td></tr><tr><td>32</td><td>Lucy</td><td>252</td></tr><tr><td>33</td><td>Hannah</td><td>242</td></tr><tr><td>34</td><td>Nora</td><td>241</td></tr><tr><td>35</td><td>Layla</td><td>237</td></tr><tr><td>36</td><td>Hazel</td><td>236</td></tr><tr><td>37</td><td>Ellie</td><td>235</td></tr><tr><td>38</td><td>Isla</td><td>234</td></tr><tr><td>39</td><td>Genesis</td><td>230</td></tr><tr><td>40</td><td>Aurora</td><td>227</td></tr><tr><td>41</td><td>Josephine</td><td>225</td></tr><tr><td>42</td><td>Grace</td><td>224</td></tr><tr><td>43</td><td>Stella</td><td>221</td></tr><tr><td>44</td><td>Eliana</td><td>219</td></tr><tr><td>44</td><td>Madison</td><td>219</td></tr><tr><td>46</td><td>Naomi</td><td>214</td></tr><tr><td>47</td><td>Gianna</td><td>205</td></tr><tr><td>47</td><td>Ximena</td><td>205</td></tr><tr><td>49</td><td>Lillian</td><td>203</td></tr><tr><td>49</td><td>Ruby</td><td>203</td></tr><tr><td>51</td><td>Natalia</td><td>195</td></tr><tr><td>52</td><td>Allison</td><td>194</td></tr><tr><td>52</td><td>Claire</td><td>194</td></tr><tr><td>54</td><td>Leah</td><td>192</td></tr><tr><td>54</td><td>Riley</td><td>192</td></tr><tr><td>56</td><td>Valentina</td><td>190</td></tr><tr><td>57</td><td>Natalie</td><td>188</td></tr><tr><td>58</td><td>Zoey</td><td>187</td></tr><tr><td>59</td><td>Cora</td><td>185</td></tr><tr><td>60</td><td>Madeline</td><td>181</td></tr><tr><td>61</td><td>Audrey</td><td>180</td></tr><tr><td>62</td><td>Addison</td><td>177</td></tr><tr><td>62</td><td>Alice</td><td>177</td></tr><tr><td>62</td><td>Lucia</td><td>177</td></tr><tr><td>65</td><td>Valeria</td><td>174</td></tr><tr><td>66</td><td>Caroline</td><td>172</td></tr><tr><td>67</td><td>Samantha</td><td>169</td></tr><tr><td>68</td><td>Clara</td><td>166</td></tr><tr><td>68</td><td>Eva</td><td>166</td></tr><tr><td>68</td><td>Maria</td><td>166</td></tr><tr><td>71</td><td>Emery</td><td>165</td></tr><tr><td>72</td><td>Sophie</td><td>164</td></tr><tr><td>73</td><td>Everly</td><td>163</td></tr><tr><td>74</td><td>Andrea</td><td>161</td></tr><tr><td>74</td><td>Delilah</td><td>161</td></tr><tr><td>74</td><td>Julia</td><td>161</td></tr><tr><td>77</td><td>Ashley</td><td>157</td></tr><tr><td>77</td><td>June</td><td>157</td></tr><tr><td>77</td><td>Leilani</td><td>157</td></tr><tr><td>77</td><td>Nova</td><td>157</td></tr><tr><td>81</td><td>Liliana</td><td>156</td></tr><tr><td>82</td><td>Margot</td><td>155</td></tr><tr><td>83</td><td>Ivy</td><td>153</td></tr><tr><td>83</td><td>Jade</td><td>153</td></tr><tr><td>85</td><td>Quinn</td><td>152</td></tr><tr><td>86</td><td>Ariana</td><td>151</td></tr><tr><td>87</td><td>Vivian</td><td>147</td></tr><tr><td>88</td><td>Adeline</td><td>146</td></tr><tr><td>88</td><td>Katherine</td><td>146</td></tr><tr><td>90</td><td>Madelyn</td><td>145</td></tr><tr><td>91</td><td>Savannah</td><td>143</td></tr><tr><td>92</td><td>Melanie</td><td>140</td></tr><tr><td>93</td><td>Isabel</td><td>137</td></tr><tr><td>93</td><td>Kennedy</td><td>137</td></tr><tr><td>93</td><td>Margaret</td><td>137</td></tr><tr><td>93</td><td>Sadie</td><td>137</td></tr><tr><td>97</td><td>Aaliyah</td><td>135</td></tr><tr><td>98</td><td>Brooklyn</td><td>134</td></tr><tr><td>98</td><td>Daisy</td><td>134</td></tr><tr><td>98</td><td>Sarah</td><td>134</td></tr></tbody></table><h2>Boys</h2><table><thead><tr><th>Rank</th><th>Name</th><th>Babies</th></tr></thead><tbody><tr><td>1</td><td>Liam</td><td>846</td></tr><tr><td>2</td><td>Noah</td><td>699</td></tr><tr><td>3</td><td>Oliver</td><td>650</td></tr><tr><td>4</td><td>Mateo</td><td>644</td></tr><tr><td>5</td><td>James</td><td>593</td></tr><tr><td>6</td><td>William</td><td>592</td></tr><tr><td>7</td><td>Henry</td><td>575</td></tr><tr><td>8</td><td>Sebastian</td><td>565</td></tr><tr><td>9</td><td>Benjamin</td><td>557</td></tr><tr><td>10</td><td>Jack</td><td>497</td></tr><tr><td>11</td><td>Daniel</td><td>492</td></tr><tr><td>12</td><td>Elijah</td><td>485</td></tr><tr><td>13</td><td>Theodore</td><td>483</td></tr><tr><td>14</td><td>Alexander</td><td>479</td></tr><tr><td>15</td><td>Dylan</td><td>473</td></tr><tr><td>16</td><td>Lucas</td><td>466</td></tr><tr><td>17</td><td>Ethan</td><td>465</td></tr><tr><td>18</td><td>John</td><td>459</td></tr><tr><td>19</td><td>Santiago</td><td>446</td></tr><tr><td>20</td><td>Julian</td><td>433</td></tr><tr><td>21</td><td>David</td><td>415</td></tr><tr><td>22</td><td>Samuel</td><td>412</td></tr><tr><td>23</td><td>Luke</td><td>409</td></tr><tr><td>24</td><td>Jose</td><td>394</td></tr><tr><td>25</td><td>Levi</td><td>388</td></tr><tr><td>26</td><td>Jacob</td><td>379</td></tr><tr><td>27</td><td>Jackson</td><td>368</td></tr><tr><td>28</td><td>Michael</td><td>363</td></tr><tr><td>29</td><td>Miles</td><td>362</td></tr><tr><td>30</td><td>Logan</td><td>359</td></tr><tr><td>31</td><td>Leo</td><td>352</td></tr><tr><td>32</td><td>Owen</td><td>347</td></tr><tr><td>33</td><td>Anthony</td><td>340</td></tr><tr><td>34</td><td>Ezra</td><td>339</td></tr><tr><td>35</td><td>Aiden</td><td>334</td></tr><tr><td>36</td><td>Joseph</td><td>329</td></tr><tr><td>36</td><td>Matthew</td><td>329</td></tr><tr><td>38</td><td>Isaac</td><td>326</td></tr><tr><td>39</td><td>Elias</td><td>323</td></tr><tr><td>39</td><td>Hudson</td><td>323</td></tr><tr><td>41</td><td>Wyatt</td><td>320</td></tr><tr><td>42</td><td>Charles</td><td>319</td></tr><tr><td>43</td><td>Angel</td><td>317</td></tr><tr><td>44</td><td>Asher</td><td>316</td></tr><tr><td>44</td><td>Luca</td><td>316</td></tr><tr><td>46</td><td>Gabriel</td><td>311</td></tr><tr><td>47</td><td>Joshua</td><td>308</td></tr><tr><td>48</td><td>Ian</td><td>306</td></tr><tr><td>48</td><td>Jayden</td><td>306</td></tr><tr><td>50</td><td>Christopher</td><td>305</td></tr><tr><td>51</td><td>Caleb</td><td>293</td></tr><tr><td>52</td><td>Thomas</td><td>285</td></tr><tr><td>53</td><td>Diego</td><td>284</td></tr><tr><td>54</td><td>Gael</td><td>280</td></tr><tr><td>55</td><td>Josiah</td><td>278</td></tr><tr><td>56</td><td>Leonardo</td><td>277</td></tr><tr><td>57</td><td>Grayson</td><td>273</td></tr><tr><td>58</td><td>Nathan</td><td>270</td></tr><tr><td>59</td><td>Christian</td><td>269</td></tr><tr><td>60</td><td>Aaron</td><td>267</td></tr><tr><td>60</td><td>Adrian</td><td>267</td></tr><tr><td>62</td><td>Axel</td><td>256</td></tr><tr><td>63</td><td>Andrew</td><td>255</td></tr><tr><td>64</td><td>Nolan</td><td>254</td></tr><tr><td>65</td><td>Ezekiel</td><td>249</td></tr><tr><td>66</td><td>Mason</td><td>244</td></tr><tr><td>67</td><td>Jonathan</td><td>242</td></tr><tr><td>68</td><td>Isaiah</td><td>231</td></tr><tr><td>69</td><td>Everett</td><td>226</td></tr><tr><td>70</td><td>Austin</td><td>225</td></tr><tr><td>70</td><td>Thiago</td><td>225</td></tr><tr><td>72</td><td>Lincoln</td><td>224</td></tr><tr><td>72</td><td>Luis</td><td>224</td></tr><tr><td>74</td><td>Juan</td><td>222</td></tr><tr><td>75</td><td>Ryan</td><td>218</td></tr><tr><td>76</td><td>Jesus</td><td>215</td></tr><tr><td>77</td><td>Brooks</td><td>211</td></tr><tr><td>78</td><td>Kai</td><td>208</td></tr><tr><td>79</td><td>Carter</td><td>198</td></tr><tr><td>79</td><td>Eli</td><td>198</td></tr><tr><td>81</td><td>Carlos</td><td>197</td></tr><tr><td>81</td><td>Damian</td><td>197</td></tr><tr><td>81</td><td>Roman</td><td>197</td></tr><tr><td>84</td><td>Robert</td><td>194</td></tr><tr><td>85</td><td>Cooper</td><td>191</td></tr><tr><td>86</td><td>August</td><td>186</td></tr><tr><td>87</td><td>Cameron</td><td>185</td></tr><tr><td>88</td><td>Emiliano</td><td>184</td></tr><tr><td>89</td><td>Jeremiah</td><td>183</td></tr><tr><td>89</td><td>Jude</td><td>183</td></tr><tr><td>91</td><td>Jaxon</td><td>178</td></tr><tr><td>91</td><td>Maverick</td><td>178</td></tr><tr><td>93</td><td>Max</td><td>175</td></tr><tr><td>94</td><td>Wesley</td><td>174</td></tr><tr><td>95</td><td>Alan</td><td>170</td></tr><tr><td>96</td><td>Parker</td><td>169</td></tr><tr><td>97</td><td>Bennett</td><td>168</td></tr><tr><td>97</td><td>Jordan</td><td>168</td></tr><tr><td>99</td><td>Adam</td><td>164</td></tr><tr><td>99</td><td>Arthur</td><td>164</td></tr></tbody></table><p class="credit">Source: City of Austin.</p>
+</div>
+<script>
+"use strict";
+
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function hex2rgb(h){ h=h.replace("#",""); if(h.length===3) h=h.split("").map(c=>c+c).join("");
+  return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]; }
+function mix(a,b,t){ const A=hex2rgb(a),B=hex2rgb(b);
+  return `rgb(${Math.round(A[0]+(B[0]-A[0])*t)},${Math.round(A[1]+(B[1]-A[1])*t)},${Math.round(A[2]+(B[2]-A[2])*t)})`; }
+// Diverging: two poles through a neutral midpoint, never a hue at the middle.
+function diverge(v, cap){
+  const t = Math.max(-1, Math.min(1, (v||0)/cap));
+  return t >= 0 ? mix(css("--div-mid"), css("--div-hi"), t)
+                : mix(css("--div-mid"), css("--div-lo"), -t);
+}
+// Relative luminance, so a label can pick ink that survives whatever fill it
+// lands on -- the sequential and diverging ramps both run pale to dark.
+function lum(col){
+  let r,g,b;
+  if(col[0] === "#"){ [r,g,b] = hex2rgb(col); }
+  else { const m = col.match(/\d+/g); r=+m[0]; g=+m[1]; b=+m[2]; }
+  const f = v => { v/=255; return v <= 0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055, 2.4); };
+  return 0.2126*f(r) + 0.7152*f(g) + 0.0722*f(b);
+}
+// Accent- and punctuation-insensitive: typing "jose" must reach JOSÉ.
+const fold = s => String(s).normalize("NFD").replace(/\p{M}/gu, "").replace(/[\p{P}\p{Z}\s]+/gu, "").toLowerCase();
+const esc  = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+
+// --- responsive embed height -------------------------------------------
+// Same contract as the food-inspection embeds: the child broadcasts its own
+// height and the host page sizes the iframe. Body, not documentElement --
+// <html> stretches to the viewport when the parent oversizes the frame, which
+// locks the reported height at whatever the parent last set.
+function postHeight(){
+  var b = document.body, cs = getComputedStyle(b);
+  var h = b.getBoundingClientRect().height +
+          parseFloat(cs.marginTop || 0) + parseFloat(cs.marginBottom || 0);
+  window.parent.postMessage({
+    embed: "austin-baby-names",
+    slug: (location.pathname.split("/").pop() || "").replace(".html", ""),
+    height: Math.ceil(h)
+  }, "*");
+}
+postHeight();
+addEventListener("load", postHeight);
+addEventListener("resize", postHeight);
+// Fonts landing late change the wrap points and therefore the height.
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(postHeight);
+if (window.ResizeObserver) new ResizeObserver(postHeight).observe(document.body);
+
+</script>
+</body>
+</html>
+
